@@ -1,0 +1,26 @@
+body{
+	background-color : #7cc264;
+	font-family: 'Kavivanar', cursive;
+	width : 1600px;
+	max-width : 100%;
+
+}
+
+
+
+h3{
+	background-color : 1d6b13;
+	text-align : center;
+	background-image : url("http://medcell.med.yale.edu/histology/gi_tract_lab/images/parietal_cells.jpg");
+}
+
+menu li{
+	position : relative;
+	text-align : center;
+	list-style-type : none;
+	float : left;
+	padding-right : 25px;
+
+}
+	
+	
