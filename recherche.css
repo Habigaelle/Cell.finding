@@ -3,6 +3,10 @@ body{
 	font-family: 'Kavivanar', cursive;
 	width : 1600px;
 	max-width : 100%;
+	margin-left : 25px;
+}
+h3{
+	font-size : 35px;
 }
 
 #Edit{
@@ -10,7 +14,7 @@ body{
 	text-decoration : none;
 	padding: 5px;
 	margin-right : 20px;
-	box-shadow:  1px 1px 5px 3px #000;
+	box-shadow:  1px 1px 2px 3px #000;
 }
 
 #Cancel{
@@ -18,7 +22,7 @@ body{
 	padding: 5px;
 	margin-right : 20px;
 	margin-top : 20px;
-	box-shadow:  1px 1px 5px 3px #000;
+	box-shadow:  1px 1px 2px 3px #000;
 }
 
 #Clear{
@@ -26,7 +30,7 @@ body{
 	padding: 5px;
 	margin-right : 20px;
 	margin-top : 20px;
-	box-shadow:  1px 1px 5px 3px #000;
+	box-shadow:  1px 1px 2px 3px #000;
 }
 
 
