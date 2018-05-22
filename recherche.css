@@ -5,6 +5,31 @@ body{
 	max-width : 100%;
 }
 
+#Edit{
+	
+	text-decoration : none;
+	padding: 5px;
+	margin-right : 20px;
+	box-shadow:  1px 1px 5px 3px #000;
+}
+
+#Cancel{
+	text-decoration : none;
+	padding: 5px;
+	margin-right : 20px;
+	margin-top : 20px;
+	box-shadow:  1px 1px 5px 3px #000;
+}
+
+#Clear{
+	text-decoration : none;
+	padding: 5px;
+	margin-right : 20px;
+	margin-top : 20px;
+	box-shadow:  1px 1px 5px 3px #000;
+}
+
+
 .index_del_rem_line_line_ico_extra_space{
 	padding-right : 10px;
 }
