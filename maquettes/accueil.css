@@ -34,21 +34,27 @@ h4{
 
 #mise_jour{
 	text-align : auto;
-	position : absolute;
+	position : relative;
 	border: solid 1px #000;
 	border-radius : 5px;
 	padding: 4px;
-	max-width : 50%
+	width : 400px;
+	height : 400px;
+	max-width : 50%;
 	}
 
 #actu{
 	text-align : auto;
-	position : absolute;
+	position : relative;
 	border: solid 1px #000;
 	border-radius : 5px;
 	padding: 4px;
+	width : 400px;
+	height : 400px;
 	max-width : 50%;
-	right : 350px;
+	left : 600px;
+	bottom : 410px; 
+	
 	}
 h6{
 	position: relative;
