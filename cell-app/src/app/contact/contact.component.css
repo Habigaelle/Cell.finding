@@ -1,0 +1,29 @@
+div{
+    background-color: #e6f5e3;
+    box-shadow: 1px 2px 1px 3px #16490c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+h2,h3,p,a,form{
+    font-family: 'Kavivanar', cursive;
+}
+h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #16490c;
+}
+input{
+    margin-left : 25px;
+}
+
+.message{
+    position: relative;
+    padding: 50px;
+}
+.message input{
+    size : 500px;
+}
+
