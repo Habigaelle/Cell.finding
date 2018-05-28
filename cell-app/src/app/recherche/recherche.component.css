@@ -1,0 +1,53 @@
+body{
+    background-color: #e6f5e3;
+    box-shadow: 1px 2px 1px 3px #16490c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    max-width: 50%;
+    width: 1600px;
+}
+h4,h3,option,label,a{
+    font-family: 'Kavivanar', cursive;
+}
+
+#Edit{
+	
+	text-decoration : none;
+	padding: 5px;
+	margin-right : 20px;
+	box-shadow:  1px 1px 2px 3px #17560f;
+}
+
+#Cancel{
+	text-decoration : none;
+	padding: 5px;
+	margin-right : 20px;
+	margin-top : 20px;
+	box-shadow:  1px 1px 2px 3px #17560f;
+}
+
+#Clear{
+	text-decoration : none;
+	padding: 5px;
+	margin-right : 20px;
+	margin-top : 20px;
+	box-shadow:  1px 1px 2px 3px #17560f;
+}
+
+
+.index_del_rem_line_line_ico_extra_space{
+	padding-right : 10px;
+}
+
+.index_del_rem_line_line_ico{
+	padding-right : 10px;
+}
+	
+.add_line_line_ico{
+	padding-right : 10px;
+}
+
+button{
+   margin: auto;
+}

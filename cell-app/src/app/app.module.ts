@@ -12,14 +12,16 @@ import { EncyclopedieComponent } from './encyclopedie/encyclopedie.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { ConnexionComponent } from './connexion/connexion.component';
 
 const appRoutes: Routes = [
-  { path: '', component: MainComponent },
+  { path: '', component: AccueilComponent },
   { path: 'accueil', component: AccueilComponent },
   { path: 'recherche', component: RechercheComponent },
   { path: 'encyclopedie', component: EncyclopedieComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'inscription', component: InscriptionComponent}]
+  { path: 'inscription', component: InscriptionComponent},
+  { path: 'connexion', component: ConnexionComponent}]
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ const appRoutes: Routes = [
     EncyclopedieComponent,
     RechercheComponent,
     AccueilComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    ConnexionComponent
   ],
   imports:[RouterModule.forRoot(appRoutes),
       BrowserModule, FormsModule

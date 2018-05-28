@@ -1,3 +1,84 @@
-<p>
-  recherche works!
-</p>
+<body>
+	<h3> Rechercher une cellule </h3>
+
+	<div class="adv_search_content">
+		<div class="adsearch_box">
+			<div class="search_form">
+				<div id="search_term" class="built_search">
+					<h4>Utiliser le formulaire pour trouver une cellule.</h4>
+				</div>
+				<br>
+
+				<div class="head half_rhythm">
+					<a href="#" id="Edit" title="Editer le formulaire."> Editer </a>
+					<a href="#" id="Cancel" title="Retour au formulaire vide"> Annuler </a>
+					<a href="#" id="Clear" title="Clear the search and builder"> Supprimer </a>
+				</div>
+				<br>
+			</div>
+			<div id="search_buttons" class="adv_search_buttons half_rhythm" style="display:none">
+				<button id="SearchHandler" class="button_search jig-ncbibutton jig-ncbibutton-copper" title="Run this search">Rechercher</button>
+			</div>
+		</div>
+	</div>
+	<div id="IndexSearch" class="advsec index_portlet" data-dbm="false">
+		<div class="head half_rhythm no_top_margin">
+			<h3 class="inline"> Formulaire de recherche </h3>
+		</div>
+		<div class="sb_line">
+			<label for="fop_0" class="offscreen_noflow"> Selectionner une operation </label>
+			<select id="fop_0" class="op_combo" style="visibility:hidden">
+				<option value="AND">ET</option>
+				<option value="OR">OU</option>
+				<option value="NOT">SANS</option>
+			</select>
+			<label for="ff_0" class="offscreen_noflow"> Selectionner un champ  </label>
+			<select class="index_field" id="ff_0">
+				<option value="morphologie"> Morphologie </option>
+				<option value="type" selected="selected"> Type </option>
+				<option value="organite"> Organite </option>
+				<option value="taille"> Taille </option>
+				<option value="systeme"> Système </option>
+
+			</select>
+			<div class="input_wrap">
+				<label for="fv_0" class="offscreen_noflow"> Champ </label>
+				<input id="fv_0" type="text" size="50" class="list_term_text jig-ncbiautocomplete" autocomplete="off" submit="false" />
+				<a href="#" class="index_del_rem_line_line_ico_extra_space" title="Remove this line from builder"> Enlever la ligne </a>
+				<a class="show_index" href="#" title="Show list of indexed terms for the selected field"> Voir la liste </a>
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<div class="sb_line">
+			<label for="fop_1" class="offscreen_noflow"> Selectionner une operation </label>
+			<select id="fop_1" class="op_combo" style="visibility:visible">
+				<option value="AND">ET</option>
+				<option value="OR">OU</option>
+				<option value="NOT">SANS</option>
+			</select>
+			<label for="ff_1" class="offscreen_noflow"> Selectionner un champ  </label>
+			<select class="index_field" id="ff_0">
+				<option value="morphologie"> Morphologie </option>
+				<option value="type" selected="selected"> Type </option>
+				<option value="organite"> Organite </option>
+				<option value="taille"> Taille </option>
+				<option value="systeme"> Système </option>
+			</select>
+			<div class="input_wrap">
+				<label for="fv_1" class="offscreen_noflow">Champ</label>
+				<input id="fv_1" type="text" size="50" class="list_term_text jig-ncbiautocomplete" autocomplete="off" submit="false" />
+				<a href="#" class="index_del_rem_line_line_ico" title="Remove this line from builder"> Enlever une ligne </a>
+				<a class="show_index" href="#" title="Show list of indexed terms for the selected field"> Voir la liste </a>
+			</div>
+		</div>
+		<div class="whole_rhythm clear">
+			<br/>
+			<button id="search" class="button_search jig-ncbibutton jig-ncbibutton-copper" cmd="go" title="Run this built search"> Rechercher </button>
+		</div>
+	</div>
+		<br>
+		<br>
+		<hr>
+		<br>
+</body>
