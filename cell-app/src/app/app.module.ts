@@ -11,13 +11,15 @@ import { ContactComponent } from './contact/contact.component';
 import { EncyclopedieComponent } from './encyclopedie/encyclopedie.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
   { path: 'accueil', component: AccueilComponent },
   { path: 'recherche', component: RechercheComponent },
   { path: 'encyclopedie', component: EncyclopedieComponent },
-  { path: 'contact', component: ContactComponent }]
+  { path: 'contact', component: ContactComponent },
+  { path: 'inscription', component: InscriptionComponent}]
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     ContactComponent,
     EncyclopedieComponent,
     RechercheComponent,
-    AccueilComponent
+    AccueilComponent,
+    InscriptionComponent
   ],
   imports:[RouterModule.forRoot(appRoutes),
       BrowserModule, FormsModule

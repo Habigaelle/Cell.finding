@@ -16,14 +16,23 @@ a{
     color: #16490c;
 }
 input{
-    margin-left : 25px;
+    margin-left : 150px;
 }
 
-.message{
-    position: relative;
-    padding: 50px;
+#nom_form{
+    margin-left: 56px;
 }
-.message input{
-    size : 500px;
+#objet_form{
+    margin-left: 51px;
+}
+
+
+.message_rep_form{
+    margin-left: 12px;
+    width: 700px;
+    max-width : 100%;
+    height: 300px;
+    font-size: 20px;
+
 }
 

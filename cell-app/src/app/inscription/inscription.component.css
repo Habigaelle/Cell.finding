@@ -1,0 +1,24 @@
+div{
+    background-color: #e6f5e3;
+    box-shadow: 1px 2px 1px 3px #16490c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    max-width: 15%;
+    width: 1600px;
+}
+
+h2,h3,p,label{
+    font-family: 'Kavivanar', cursive;
+}
+h3{
+    text-align: center;
+}
+
+label,input
+
+{
+    display: inline-block;
+    width: 200px; 
+}
+
