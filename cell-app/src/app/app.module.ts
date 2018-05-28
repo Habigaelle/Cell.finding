@@ -16,6 +16,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { AppareilService } from './_services/appareil.service';
 
 
+
 const appRoutes: Routes = [
   { path: '', component: AccueilComponent },
   { path: 'accueil', component: AccueilComponent },
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
     AccueilComponent,
     InscriptionComponent,
     ConnexionComponent,
+
 
   ],
   imports:[RouterModule.forRoot(appRoutes),

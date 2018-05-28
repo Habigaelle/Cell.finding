@@ -4,9 +4,9 @@ import { AppareilService } from '../_services/appareil.service';
 
 
 @Component({
-  selector: 'app-cell-finding',
-  templateUrl: './cell-finding.component.html',
-  styleUrls: ['./cell-finding.component.css']
+  selector: 'app-encyclopedie',
+  templateUrl: './encyclopedie.component.html',
+  styleUrls: ['./encyclopedie.component.css']
 })
 export class EncyclopedieComponent implements OnInit {
   edit = false;
