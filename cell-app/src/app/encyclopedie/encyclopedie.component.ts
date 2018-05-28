@@ -12,8 +12,4 @@ export class EncyclopedieComponent implements OnInit {
   ngOnInit() {
   }
 
-  visible = true;
-  liste_visible(id:string){
-    this.visible != this.visible;
-  }
 }
