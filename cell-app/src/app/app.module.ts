@@ -13,6 +13,8 @@ import { RechercheComponent } from './recherche/recherche.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { EBoucheComponent } from './e-bouche/e-bouche.component';
+import { EIntestinsComponent } from './e-intestins/e-intestins.component';
 
 const appRoutes: Routes = [
   { path: '', component: AccueilComponent },
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     RechercheComponent,
     AccueilComponent,
     InscriptionComponent,
-    ConnexionComponent
+    ConnexionComponent,
+    EBoucheComponent
   ],
   imports:[RouterModule.forRoot(appRoutes),
       BrowserModule, FormsModule
