@@ -13,6 +13,7 @@ import { RechercheComponent } from './recherche/recherche.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { AppareilService } from './_services/appareil.service';
 
 
 const appRoutes: Routes = [
@@ -41,7 +42,7 @@ const appRoutes: Routes = [
   imports:[RouterModule.forRoot(appRoutes),
       BrowserModule, FormsModule
   ],
-  providers: [],
+  providers: [AppareilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
