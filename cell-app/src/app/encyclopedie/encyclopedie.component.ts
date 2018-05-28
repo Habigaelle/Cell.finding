@@ -9,6 +9,6 @@ export class EncyclopedieComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
+
 }
