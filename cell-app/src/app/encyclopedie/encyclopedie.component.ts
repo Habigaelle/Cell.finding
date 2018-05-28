@@ -20,4 +20,5 @@ export class EncyclopedieComponent implements OnInit {
   ngOnInit() {
 
   }
+
 }
