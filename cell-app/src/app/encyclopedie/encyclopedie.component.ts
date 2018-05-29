@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Appareil } from '../_models';
+import { Tissu } from '../_models';
 import { AppareilService } from '../_services/appareil.service';
+import { TissuService } from '../_services/tissu.service';
 
 
 @Component({
@@ -9,21 +11,27 @@ import { AppareilService } from '../_services/appareil.service';
   styleUrls: ['./encyclopedie.component.css']
 })
 export class EncyclopedieComponent implements OnInit {
-  edit = false;
-
-  appareilSelected: Appareil;
+  view_appareil = false;
+  view_tissu = false; 
   appareils;
-  appareil = new Appareil();
+  appareil = new Appareil('', '');
 
-  constructor(private appareilService: AppareilService) { }
-  
+  tissus;
+  tissu = new Tissu('','');
+
+
+
+  constructor(private appareilService: AppareilService, private tissuService : TissuService) { }
+
   ngOnInit() {
     this.appareils = this.appareilService.getAppareilService();
+    this.tissus = this.tissuService.getTissuService();
   }
-visible(){
-  this.edit !=this.edit;
-}
-select(e: Appareil) {
-  this.appareilSelected = e;
-}
+
+  visibleAppareil() {
+    this.view_appareil =! this.view_appareil;
+  }
+  visibleTissu(){
+    this.view_tissu =! this.view_tissu;
+  }
 }

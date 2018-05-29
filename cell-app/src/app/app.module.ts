@@ -15,6 +15,8 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { AppareilService } from './_services/appareil.service';
 import { AppareilComponent } from './appareil/appareil.component';
+import { TissuService } from './_services/tissu.service';
+import { TissuComponent } from './tissu/tissu.component';
 
 
 
@@ -40,13 +42,15 @@ const appRoutes: Routes = [
     InscriptionComponent,
     ConnexionComponent,
     AppareilComponent,
+    TissuComponent,
+    
 
 
   ],
   imports:[RouterModule.forRoot(appRoutes),
       BrowserModule, FormsModule
   ],
-  providers: [AppareilService],
+  providers: [AppareilService, TissuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

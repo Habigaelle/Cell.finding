@@ -1,18 +1,24 @@
 <h3>Encyclopédie</h3>
 
 <menu>
-  <h4>Par Système</h4>
-    <span *ngIf="appareilSelected">
-      <app-appareil [appareil]="appareilSelected"></app-appareil>
-    </span>
+
+  <button (click)=visibleAppareil(e)> Par Système </button>
+  <div *ngIf="view_appareil">
+    <app-appareil [appareil]="e"></app-appareil>
+
 
     <ul *ngFor="let e of appareils">
-      <li> {{e.nom|uppercase}}</li>
-  
+      <li>{{e.nom}}</li>
     </ul>
+  </div>
 
+  <button (click)=visibleTissu(t)>Par Tissu </button>
+  <div *ngIf="view_tissu">
+    <app-tissu [tissu]="t"></app-tissu>
+
+
+    <ul *ngFor="let t of tissus">
+      <li>{{t.nom}}</li>
+    </ul>
+  </div>
 </menu>
-
-      
-
- 
