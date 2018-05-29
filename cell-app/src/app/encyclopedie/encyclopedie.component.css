@@ -1,4 +1,4 @@
-menu{
+#menu_encyclo{
     background-color: #e6f5e3;
     box-shadow: 1px 2px 1px 3px #16490c;
     border-radius: 10px;
@@ -10,7 +10,7 @@ menu{
 }
 
 
-label,a,li{
+label,h4,a,li{
     font-family: 'Kavivanar', cursive;
 }
 

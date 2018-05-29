@@ -16,9 +16,14 @@ export class EncyclopedieComponent implements OnInit {
   appareil = new Appareil();
 
   constructor(private appareilService: AppareilService) { }
-
+  
   ngOnInit() {
-
+    this.appareils = this.appareilService.getAppareilService();
   }
-
+visible(){
+  this.edit !=this.edit;
+}
+select(e: Appareil) {
+  this.appareilSelected = e;
+}
 }

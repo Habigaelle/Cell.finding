@@ -1,36 +1,18 @@
+<h3>Encyclopédie</h3>
+
 <menu>
-  <h3>Encyclopédie</h3>
-  <ul>
-    <li>
-      <a id="systeme_index">Par Systeme</a>
-    </li>
-    
-      <ul>
-        <li><a href="#"></a>Lèvres</li>
-        <li><a href="#"></a>Gencives</li>
-        <li><a href="#"></a>Dents</li>
-        <li><a href="#"></a>Palais</li>
-        <li><a href="#"></a>Langue</li>
-        <li><a href="#"></a>Pharynx</li>
-        <li><a href="#"></a>Oesophage</li>
-        <li><a href="#"></a>Estomac</li>
-        </ul>
-    <li>
-      <a id="tissu_index">Par Tissu</a>
-    </li>
-    <ul id="tissu_liste">
-      <li>
-        <a href="#"> Tissus épithéliaux </a>
-      </li>
-      <li>
-        <a href="#"> Tissus conjonctifs et de soutien </a>
-      </li>
-      <li>
-        <a href="#"> Tissus musculaires </a>
-      </li>
-      <li>
-        <a href="#"> Tissus nerveux </a>
-      </li>
+  <h4>Par Système</h4>
+    <span *ngIf="appareilSelected">
+      <app-appareil [appareil]="appareilSelected"></app-appareil>
+    </span>
+
+    <ul *ngFor="let e of appareils">
+      <li> {{e.nom|uppercase}}</li>
+  
     </ul>
-  </ul>
+
 </menu>
+
+      
+
+ 

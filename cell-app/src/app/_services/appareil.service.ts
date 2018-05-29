@@ -18,4 +18,7 @@ export class AppareilService {
 
   constructor() { }
 
+  getAppareilService() {
+    return this.appareils;
+  }
 }

@@ -14,6 +14,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { AppareilService } from './_services/appareil.service';
+import { AppareilComponent } from './appareil/appareil.component';
 
 
 
@@ -38,6 +39,7 @@ const appRoutes: Routes = [
     AccueilComponent,
     InscriptionComponent,
     ConnexionComponent,
+    AppareilComponent,
 
 
   ],
