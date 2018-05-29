@@ -17,6 +17,8 @@ import { AppareilService } from './_services/appareil.service';
 import { AppareilComponent } from './appareil/appareil.component';
 import { TissuService } from './_services/tissu.service';
 import { TissuComponent } from './tissu/tissu.component';
+import { AppareilDigestifComponent } from './appareil-digestif/appareil-digestif.component';
+import { AppareilDigestifService } from 'src/app/_services/appareil-digestif.service';
 
 
 
@@ -43,6 +45,7 @@ const appRoutes: Routes = [
     ConnexionComponent,
     AppareilComponent,
     TissuComponent,
+    AppareilDigestifComponent,
     
 
 
@@ -50,7 +53,7 @@ const appRoutes: Routes = [
   imports:[RouterModule.forRoot(appRoutes),
       BrowserModule, FormsModule
   ],
-  providers: [AppareilService, TissuService],
+  providers: [AppareilService, TissuService,AppareilDigestifService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
