@@ -6,28 +6,17 @@
   <div *ngIf="view_appareil">
     <app-appareil [appareil]="e"></app-appareil>
 
-
     <ul *ngFor="let e of appareils">
-      <li (click)=visibleAppareilDigestif(adi)>{{e.nom}}</li>
-        <div *ngIf="view_appareil_digestif">
-          <app-appareil-digestif [appareilDigestif]="adi"></app-appareil-digestif>
-
-          <ul *ngFor="let adi of appareils_digestifs">
-            <li>{{adi.nom}}</li>
-          </ul>
-        </div>
-
+      <li>{{e.nom}}</li>
     </ul>
   </div>
 
-    <button (click)=visibleTissu(t)>Par Tissu </button>
-    <div *ngIf="view_tissu">
-      <app-tissu [tissu]="t"></app-tissu>
+  <button (click)=visibleTissu(t)>Par Tissu </button>
+  <div *ngIf="view_tissu">
+    <app-tissu [tissu]="t"></app-tissu>
+    <ul *ngFor="let t of tissus">
+      <li>{{t.nom}}</li>
+    </ul>
+  </div>
 
-
-      <ul *ngFor="let t of tissus">
-        <li>{{t.nom}}</li>
-      </ul>
-    </div>
-  
 </menu>
