@@ -18,6 +18,7 @@ import { AppareilComponent } from './appareil/appareil.component';
 import { TissuService } from './_services/tissu.service';
 import { TissuComponent } from './tissu/tissu.component';
 import { ElementComponent } from './element/element.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -51,7 +52,7 @@ const appRoutes: Routes = [
 
   ],
   imports:[RouterModule.forRoot(appRoutes),
-      BrowserModule, FormsModule
+      BrowserModule, FormsModule, HttpClientModule,
   ],
   providers: [AppareilService, TissuService],
   bootstrap: [AppComponent]

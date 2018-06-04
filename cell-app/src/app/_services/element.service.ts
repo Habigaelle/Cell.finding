@@ -32,9 +32,6 @@ export class ElementService {
 
 
 ]
-
-
-
   constructor() { }
 
   getElementbyType() {
