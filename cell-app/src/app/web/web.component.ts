@@ -7,12 +7,16 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./web.component.css']
 })
 export class WebComponent implements OnInit {
+  liste = '';
 
-  liste = [];
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('http://localhost:8080/all').subscribe(r => this.liste == r)
+    this.http.get('http://localhost:8080/all').subscribe(r => this.showreturn(r));
   }
 
+  showreturn(r){
+  this.liste = JSON.stringify(r);
+  console.log(r);
+  }
 }
