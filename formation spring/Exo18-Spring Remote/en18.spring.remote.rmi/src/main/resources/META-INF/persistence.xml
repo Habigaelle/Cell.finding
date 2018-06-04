@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+  version="2.0">
+
+  <persistence-unit name="JPABanque" transaction-type="RESOURCE_LOCAL">
+    <!-- Dans sa nouvelle version, il faut utiliser cette classe avec Hibernate -->
+    <!--  <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+    
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.banque.entity.impl.AbstractEntity</class>
+    <class>com.banque.entity.impl.UtilisateurEntity</class>
+    <class>com.banque.entity.impl.CompteEntity</class>
+    <class>com.banque.entity.impl.OperationEntity</class>
+  </persistence-unit>
+
+</persistence>
+

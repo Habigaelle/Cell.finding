@@ -8,9 +8,17 @@
 
     <ul *ngFor="let e of appareils">
       <li>{{e.nom}}</li>
+      <div *ngIf (click)='id="Dig"'>
+        <ul *ngFor="let d of elements">
+          <li>{{d.nom}}</li>
+          </ul>
+      </div>
+
     </ul>
   </div>
+</menu>
 
+<menu>
   <button (click)=visibleTissu(t)>Par Tissu </button>
   <div *ngIf="view_tissu">
     <app-tissu [tissu]="t"></app-tissu>
@@ -18,5 +26,4 @@
       <li>{{t.nom}}</li>
     </ul>
   </div>
-
 </menu>

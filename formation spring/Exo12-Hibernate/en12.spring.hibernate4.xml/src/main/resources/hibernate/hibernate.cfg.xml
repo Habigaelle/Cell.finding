@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+		
+	<!-- Options : https://docs.jboss.org/hibernate/orm/4.1/devguide/en-US/html_single/ -->
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- On utilise l'option &amp;useSSL=false afin d'eviter le warning SSL -->
+		<property name="connection.url">jdbc:mysql://localhost/banque?useSSL=false</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password"></property>
+		<!-- Utilisation du pool interne Hibernate -->
+		<property name="hibernate.connection.pool_size">10</property>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+		<mapping resource="hibernate/compte.hbm.xml" />
+		<mapping resource="hibernate/operation.hbm.xml" />
+		<mapping resource="hibernate/utilisateur.hbm.xml" />
+	</session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+<!--  	
+	<bean id="CarnetAdresse" class="com.exo.Client">
+		<property name="adresses">
+			<list>
+				<bean class="com.exo.Adresse">
+					<property name="codePostal" value="54120"/>
+					<property name="rue" value="Boulevard de Choupsz"/>
+					<property name="ville" value="Nancy"/>
+					<property name="pays" value="France"/>
+				</bean>
+				<bean class="com.exo.Adresse">
+					<property name="codePostal" value="88120"/>
+					<property name="rue" value="Boulevard de brouette"/>
+					<property name="ville" value="Epinal"/>
+					<property name="pays" value="France"/>
+				</bean>
+				<bean class="com.exo.Adresse">
+					<constructor-arg value="69130"/>
+					<constructor-arg value="Impasse Traboulière"/>
+					<constructor-arg value="Lyon"/>
+					<constructor-arg value="France"/>
+				</bean>
+				<bean class="com.exo.Adresse">
+					<property name="codePostal" value="69000"/>
+					<property name="rue" value="Boulevard de la Traboule"/>
+					<property name="ville" value="Lyon"/>
+					<property name="pays" value="France"/>
+				</bean>
+				
+			</list>
+		</property>
+	</bean>
+	
+-->	
+
+
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<property name="location" value="adresses.properties"/>
+  				<property name="codePostal" value="${addresse01.codepostal}"/>
+ 				<property name="rue" value="${addresse01.rue}"/>
+ 				<property name="ville" value="${addresse01.ville}"/>
+ 				<property name="pays" value="${addresse01.pays}"/>
+
+</bean>
+<!--
+<bean id="ad2" class="com.exo.Adresse">
+  <property name="codePostal" value="${addresse01.codepostal}"/>
+  <property name="rue" value="${addresse01.rue}"/>
+  <property name="ville" value="${addresse01.ville}"/>
+  <property name="pays" value="${addresse01.pays}"/>
+</bean>
+-->
+
+	<bean id="client02" class="com.exo.Client">
+		<property name="nom" value="Mora"/>
+		<property name="prenom" value="Nicolas"/>
+		<property name="age" value="23"/>
+		<property name="adresse01"/>
+	</bean>	
+
+		<!--		</bean>
+				<bean class="com.exo.Adresse">
+					<property name="codePostal" value="88120"/>
+					<property name="rue" value="Boulevard de brouette"/>
+					<property name="ville" value="Epinal"/>
+					<property name="pays" value="France"/>
+				</bean>
+				<bean class="com.exo.Adresse">
+					<constructor-arg value="69130"/>
+					<constructor-arg value="Impasse Traboulière"/>
+					<constructor-arg value="Lyon"/>
+					<constructor-arg value="France"/>
+				</bean>
+				<bean class="com.exo.Adresse">
+					<property name="codePostal" value="69000"/>
+					<property name="rue" value="Boulevard de la Traboule"/>
+					<property name="ville" value="Lyon"/>
+					<property name="pays" value="France"/>
+				</bean>
+				-->
+			
+		
+
+</beans>

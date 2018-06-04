@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+  version="2.0">
+
+  <persistence-unit name="JPABanque" transaction-type="RESOURCE_LOCAL" >
+    <!-- Dans sa nouvelle version, il faut utiliser cette classe avec Hibernate -->
+    <!--  <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+    
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.banque.entity.impl.AbstractEntity</class>
+    <class>com.banque.entity.impl.UtilisateurEntity</class>
+    <class>com.banque.entity.impl.CompteEntity</class>
+    <class>com.banque.entity.impl.OperationEntity</class>
+
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/banque?useSSL=false" />
+      <property name="javax.persistence.jdbc.user" value="root" />
+      <property name="javax.persistence.jdbc.password" value="" />
+      <!-- Si l'on veut gerer un timeout 
+      <property name="javax.persistence.query.timeout" value="3000"/>
+      -->
+      <property name="hibernate.ejb.entitymanager_factory_name" value="JPABanqueFactoryName" />
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+      <property name="hibernate.show_sql" value="false" />
+      
+    </properties>
+  </persistence-unit>
+
+</persistence>
+

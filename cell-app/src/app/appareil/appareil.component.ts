@@ -6,9 +6,10 @@ import { Appareil } from '../_models';
   templateUrl: './appareil.component.html',
   styleUrls: ['./appareil.component.css']
 })
-export class AppareilComponent implements OnInit {
 
- @Input() appareil: Appareil;
+export class AppareilComponent{
+
+ @Input()appareil: Appareil;
 
   constructor() { }
 

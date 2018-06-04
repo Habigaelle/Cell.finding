@@ -6,7 +6,7 @@ import { Appareil } from '../_models';
 })
 
 export class AppareilService {
-  appareils = [new Appareil('Appareil Digestif',''),
+  appareils = [new Appareil('Appareil Digestif','dig'),
   new Appareil('Appareil Reproducteur',''),
   new Appareil('Appareil Respiratoire',''),
   new Appareil('Appareil Urinaire',''),

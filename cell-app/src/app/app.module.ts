@@ -17,6 +17,7 @@ import { AppareilService } from './_services/appareil.service';
 import { AppareilComponent } from './appareil/appareil.component';
 import { TissuService } from './_services/tissu.service';
 import { TissuComponent } from './tissu/tissu.component';
+import { ElementComponent } from './element/element.component';
 
 
 
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
     ConnexionComponent,
     AppareilComponent,
     TissuComponent,
+    ElementComponent,
     
 
 
