@@ -19,6 +19,7 @@ import { TissuService } from './_services/tissu.service';
 import { TissuComponent } from './tissu/tissu.component';
 import { ElementComponent } from './element/element.component';
 import { HttpClientModule } from '@angular/common/http';
+import { WebComponent } from './web/web.component';
 
 
 
@@ -47,7 +48,7 @@ const appRoutes: Routes = [
     AppareilComponent,
     TissuComponent,
     ElementComponent,
-    
+    WebComponent
 
 
   ],
