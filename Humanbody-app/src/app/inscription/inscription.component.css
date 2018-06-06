@@ -1,0 +1,22 @@
+div{
+    background-color: #f5b08f;
+    box-shadow: 1px 2px 1px 3px #572d0b;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    max-width: 15%;
+    width: 1600px;
+}
+
+h2,h3,p,label{
+}
+
+h3{
+    text-align: center;
+}
+
+label,input,button{
+    display: inline-block;
+    width: 200px; 
+}
+

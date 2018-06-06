@@ -1,0 +1,37 @@
+div{
+    background-color: #f5b08f;
+    box-shadow: 1px 2px 1px 3px #572d0b;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+h2,h3,p,a,form{
+}
+h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #49100c;
+}
+input{
+    margin-left : 150px;
+}
+
+#nom_form{
+    margin-left: 56px;
+}
+#objet_form{
+    margin-left: 51px;
+}
+
+
+.message_rep_form{
+    margin-left: 12px;
+    width: 700px;
+    max-width : 100%;
+    height: 300px;
+    font-size: 20px;
+
+}
+
